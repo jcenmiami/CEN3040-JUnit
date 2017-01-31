@@ -6,26 +6,25 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CircleTest {
+public class CircleTest2 {
 	
-	Circle myCircle;
+	Circle myCircle2;
 
 	@Before
 	public void setUp() throws Exception {
-		myCircle = new Circle();
+		myCircle2 = new Circle(2);
+		
 	}
 
 	@After
 	public void tearDown() throws Exception {
-		myCircle = null;
-	}
-	
-	@Test
-	public void testConstructorDefault(){
-		assertEquals(0, myCircle.getRadius());
-		assertEquals(0.0, myCircle.getAreaCircle(), 0.00001);
+		myCircle2 = null;
 	}
 
-	
+	@Test
+	public void testConstructor(){
+		assertEquals(2, myCircle2.getRadius());
+		assertEquals(12.5663706, myCircle2.getAreaCircle(), 0.00001);
+	}
 
 }

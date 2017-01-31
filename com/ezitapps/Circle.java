@@ -1,8 +1,8 @@
 package com.ezitapps;
 
+
 public class Circle {
 	private int radius;
-	private double areaCircle;
 	
 	//Default Constructor
 	public Circle(){
@@ -22,10 +22,8 @@ public class Circle {
 		this.radius = radius;
 	}
 	public double getAreaCircle() {
+		System.out.println("Area of Circle is: " + (Math.PI*radius*radius));
 		return Math.PI*radius*radius;
-	}
-	public void calculateCircleArea(){
-		areaCircle = Math.PI*radius*radius;
 	}
 	
 	
